@@ -3,7 +3,7 @@ const { type } = require('os');
 const personSchemas=new mongoose.Schema({
     name:{
         type:String,
-        require:true
+        required:true
     },
     age:{
         type:String,
@@ -11,24 +11,24 @@ const personSchemas=new mongoose.Schema({
     work:{
         type:String,
         enum:['chef','waiter','manager'],
-        require:true
+        required:true
     },
     mobile:{
         type:String,
-        require:true
+        required:true
     },
     email:{
         type:String,
-        require:true,
+        required:true,
         unique:true
     },
     address:{
         type:String,
-        require:true
+        required:true
     },
     salary:{
         type:Number,
-        require:true
+        required:true
     }
    
 })
